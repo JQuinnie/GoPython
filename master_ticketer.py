@@ -1,33 +1,39 @@
 TICKET_PRICE = 10
 tickets_remaining = 100
 
-# Output how many tickets are remaining using the tickets_remaining variable
-print("There are {} tickets remaining.".format(tickets_remaining))
+# Run this code continuously until we run out of tickets
+while tickets_remaining >= 1:
 
-# Gather the user's name and assign it to a new variable
-name = input("What is your name? ")
+    # Output how many tickets are remaining using the tickets_remaining variable
+    print("There are {} tickets remaining.".format(tickets_remaining))
 
-# Prompt the user by name and ask how many tickets they would like
-number_of_tickets = int(
-    input("Hi {}, how many tickets would you like to purchase? ".format(name))
-)
+    # Gather the user's name and assign it to a new variable
+    name = input("What is your name? ")
 
-# Calculate the price (number of tickets * price) and assign it to a variable
-total_price = number_of_tickets * TICKET_PRICE
+    # Prompt the user by name and ask how many tickets they would like
+    number_of_tickets = int(
+        input("Hi {}, how many tickets would you like to purchase? ".format(name))
+    )
 
-# Out put the price to the screen
-print("Your total price is: {}".format(total_price))
+    # Calculate the price (number of tickets * price) and assign it to a variable
+    total_price = number_of_tickets * TICKET_PRICE
 
-# Prompt user if they want to proceed. Y/N
-proceed = input("Would you like to proceed with the purchase order? (Y/N) ")
+    # Out put the price to the screen
+    print("Your total price is: {}".format(total_price))
 
-# If they want to proceed
-if proceed.lower() == "y":
-    # print out to the screen 'SOLD!' to confirm purchase
-    print("Thank you for your purchase!")
-    # and then decrement the tickets remaining by the number of tickets purchased
-    tickets_remaining -= number_of_tickets
-# Otherwise...
-else:
-    # Thank them by name
-    print("{}, thank you for browsing!".format(name))
+    # Prompt user if they want to proceed. Y/N
+    proceed = input("Would you like to proceed with the purchase order? (Y/N) ")
+
+    # If they want to proceed
+    if proceed.lower() == "y":
+        # print out to the screen 'SOLD!' to confirm purchase
+        print("Thank you for your purchase!")
+        # and then decrement the tickets remaining by the number of tickets purchased
+        tickets_remaining -= number_of_tickets
+    # Otherwise...
+    else:
+        # Thank them by name
+        print("{}, thank you for browsing!".format(name))
+
+# Notify user that the tickets are sold out
+print("Sorry, all the tickets are sold.")
