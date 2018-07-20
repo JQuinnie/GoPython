@@ -34,3 +34,18 @@ print("Suggested reading: {}".format(books[0]))
 books.insert(0, "Learning Python: Powerful Object-Oriented Programming")
 # add string to 0 index, lists are mutable but strings are not, you can access a specific character on a String using an index, but you cannot change it
 books[0] += " - Mark Lutz"
+
+# > python -i filename.py will go into interactive mode
+
+# unicode for emoji of taco
+cater_lunch = "\N{Taco}"
+
+recommendation = books[0]
+# deletes books by index
+del books[0]
+
+print(books, recommendation)
+
+# in python you can pop a specific index to a list
+print(books.pop())
+print(books.pop(1))
