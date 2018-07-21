@@ -49,3 +49,13 @@ print(books, recommendation)
 # in python you can pop a specific index to a list
 print(books.pop())
 print(books.pop(1))
+
+
+# iterate thru list
+print("Books:")
+for book in books:
+    print("* " + book)
+
+# check to see if something is in a list
+print("James" in attendees)
+
