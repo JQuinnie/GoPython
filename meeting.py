@@ -74,3 +74,12 @@ def conf_needlist(display_name, needs):
 
 conf_needlist("Lunches", lunch_options)
 conf_needlist("Attendees", attendees)
+
+# split and join
+to_line = ", ".join(attendees)
+cc_line = ", ".join(more_attendees)
+print("To: " + to_line)
+print("Cc: " + cc_line)
+
+# back to list
+print(to_line.split(", "))
