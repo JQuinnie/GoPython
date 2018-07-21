@@ -59,3 +59,18 @@ for book in books:
 # check to see if something is in a list
 print("James" in attendees)
 
+lunch_options = ["Burgers", "Salads", "Sandwiches"]
+
+# general function because DRY
+def conf_needlist(display_name, needs):
+    items = needs.copy()  # create a copy of the list so cant mutate it in our function
+    print(display_name + ":")
+    suggested = items.pop(0)  # items.remove("item name") will also work
+    print("=====>", suggested, "<=====")
+    for item in items:
+        print("* " + item)
+    print()
+
+
+conf_needlist("Lunches", lunch_options)
+conf_needlist("Attendees", attendees)
