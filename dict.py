@@ -34,3 +34,18 @@ packer(name="Jenn", exp=1, job=None)
 packerJob(name="Jenn", exp=1, job=None)
 unpacker(**{"last_name": "Chu", "first_name": "Jenn"})
 
+
+# looping through dict
+for key in jenn:
+    print(key, "=", jenn[key])
+
+# can also use
+for key in jenn.keys():
+    print(key)
+
+for value in jenn.values():
+    print(value)
+
+# items give back a tuple
+for item in jenn.items():
+    print(item)
