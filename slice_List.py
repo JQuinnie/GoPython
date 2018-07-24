@@ -25,3 +25,10 @@ print(even_number_list)
 print(step_back)
 print(reverse_list)
 print(last_4)
+
+# slice and join together
+rainbow = ["red", "orange", "yellow", "green", "blue", "pink"]
+rainbow[-1:] = "purple"
+rainbow[-6:] = ["".join(rainbow[-6:])]
+
+print(rainbow)
