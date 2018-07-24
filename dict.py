@@ -49,3 +49,23 @@ for value in jenn.values():
 # items give back a tuple
 for item in jenn.items():
     print(item)
+
+
+# E.g. word_count("I do not like it Sam I Am") gets back a dictionary like:
+# {'i': 2, 'do': 1, 'it': 1, 'sam': 1, 'like': 1, 'not': 1, 'am': 1}
+# Lowercase the string to make it easier.
+def word_count(string):
+    new_dict = {}
+    new_list = string.lower().split()
+    for item in new_list:
+        new_dict.update({item: new_list.count(item)})
+    return new_dict
+
+
+def word_count2(string):
+    new_list = string.lower().split()
+    return {item: new_list.count(item) for item in new_list}
+
+
+print(word_count("I do not like it Sam I am"))
+print(word_count2("I do not like it Sam I am"))
