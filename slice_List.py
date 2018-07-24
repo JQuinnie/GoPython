@@ -43,3 +43,15 @@ example = "Hello World!"
 
 for letter in example[::-1]:
     print(letter)
+
+
+# create function that will take in a string and return the first half lowercase and 2nd half upper case
+def sillycase(string):
+    # half = int(len(string) / 2), below is using floor division which returns an integer
+    half = len(string) // 2
+    first_half = string[:half].lower()
+    second_half = string[half:].upper()
+    return first_half + second_half
+
+
+print(sillycase("treehouse"))
