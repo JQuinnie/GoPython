@@ -20,11 +20,11 @@ step_back = number_list[-2:-5:-1]
 reverse_list = number_list[::-1]
 last_4 = number_list[-4::1]
 
-print(number_list)
-print(even_number_list)
-print(step_back)
-print(reverse_list)
-print(last_4)
+# print(number_list)
+# print(even_number_list)
+# print(step_back)
+# print(reverse_list)
+# print(last_4)
 
 # slice and join together
 rainbow = ["red", "orange", "yellow", "green", "blue", "pink"]
@@ -32,3 +32,14 @@ rainbow[-1:] = "purple"
 rainbow[-6:] = ["".join(rainbow[-6:])]
 
 print(rainbow)
+
+# for loop with slice
+example = "Hello World!"
+
+for letter in example[-6:]:
+    print(letter)
+
+example = "Hello World!"
+
+for letter in example[::-1]:
+    print(letter)
