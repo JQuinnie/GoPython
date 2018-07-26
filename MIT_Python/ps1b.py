@@ -1,4 +1,4 @@
-# determine how long it will take you to save enough money to make housing down payment
+# determine how long it will take you to save enough money to make housing down payment with a semi-annual raise
 
 
 def calc():
@@ -12,7 +12,8 @@ def calc():
     # cost of dream house
     total_cost = int(input("Enter the cost of your dream house: "))
     # semi-annual raise
-    semi_annual_raise = float(input("Enter the semi-annual raise, as a decimal: "))
+    semi_annual_raise = float(
+        input("Enter the semi-annual raise, as a decimal: "))
 
     # portion of cost needed for down payment
     portion_down_payment = .25
