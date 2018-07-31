@@ -86,3 +86,25 @@ print(
         }
     )
 )
+
+
+course_minutes = {
+    "Python Basics": 232,
+    "Django Basics": 237,
+    "Flask Basics": 189,
+    "Java Basics": 133,
+}
+
+for course, minutes in course_minutes.items():
+    print("{} is {} minutes long".format(course, minutes))
+
+
+# enumerate a list
+for index, letter in enumerate("abcdefghijklmnopqrstuvwxyz"):
+    print("{}: {}".format(index + 1, letter))
+
+# same as above but without enumerate
+count = 1
+for letter in "abcdefghijklmnopqrstuvwxyz":
+    print("{}: {}".format(count, letter))
+    count += 1
