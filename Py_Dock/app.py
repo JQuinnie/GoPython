@@ -17,4 +17,5 @@ def run():
     httpd.serve_forever()
 
 
+# run in browser on localhost:8080
 run()
