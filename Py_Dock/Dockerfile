@@ -1,5 +1,5 @@
 # Base Image from Ubuntu Linux Image
-FROM Ubuntu:latest
+FROM ubuntu:latest
 
 # Commands to run to install dependencies
 RUN apt-get update -y
